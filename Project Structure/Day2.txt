@@ -1,0 +1,6 @@
+Model + Serializers + admin Setup + CSS
+1. Create Models : Category, Product, UserProfile, Order, Order Item
+2. Use Django Admin to add sample data
+3. Create DRF Serializers for Product & Category
+4. Expose /api/Products/ amd /api/categories/endpoints
+5. Tailwind CSS setup.
