@@ -9,6 +9,17 @@ def get_products(request):
     serializer = ProductSerializer(products, many=True)
     return Response(serializer.data)
 
+
+@api_view(['GET'])
+def get_product(request, product_id):
+    try:
+        product = Product.objects.get(id=product_id)
+    except Product.DoesNotExist:
+        return Response({'error': 'Product not found'}, status=404)
+
+    serializer = ProductSerializer(product)
+    return Response(serializer.data)
+
 @api_view(['GET'])
 def get_categories(request):
     categories = Category.objects.all()

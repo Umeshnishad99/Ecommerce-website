@@ -1,0 +1,13 @@
+Frontend Product Listing page
+
+1. Fetch /api/products/ using useEffect + fetch()
+2. Display Product in grid (image + name +  price)
+3. Add loading /error states
+4. tailwind styling
+
+
+Product Detail Page & Routing
+1. Setup React Router DOM
+2. Create ProductDetail.jsx page
+3. Display product image, description, price, image
+4. "Add to Cart" button (UI only)
