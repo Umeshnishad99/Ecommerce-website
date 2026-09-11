@@ -1,0 +1,12 @@
+CART FUNCTIONALITY (BACK-END)
+1. Create Cart and cartItem Models.
+2. Expose /api/cart, api/cart/add, api/cart/remove
+3. Use Fetch() to sync React Cart with api
+
+
+CART FUNCTIONALITY (FRONT-END)
+1. Add product to cart from detail page
+2. Use Context API for cart state
+3. Display cart item in cartPage
+4. Update qualtity(+/-)
+5. Remove Items

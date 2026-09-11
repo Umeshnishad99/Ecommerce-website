@@ -1,6 +1,7 @@
 
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
+import { useCart } from "../context/CartContext";
 
 function ProductDetail() {
     const { id } = useParams();
@@ -10,6 +11,7 @@ function ProductDetail() {
     const [product, setProduct] = useState(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
+    const {addToCart} = useCart();
 
     useEffect(() => {
         const fetchProduct = async () => {
@@ -91,6 +93,7 @@ function ProductDetail() {
                         </p>
 
                         <button
+                            onClick={() => addToCart(product)}
                             className="w-full sm:w-auto bg-blue-500 text-white px-5 py-2.5 sm:py-3 rounded-lg hover:bg-blue-600 transition-colors duration-300 text-sm sm:text-base"
                         >
                             Add to Cart
