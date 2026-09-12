@@ -31,8 +31,8 @@ function ProductList() {
     if (error) return <div>Error: {error}</div>;
 
     return (
-        <div className="container mx-auto p-2">
-            <h1 className="text-3xl font-bold py-4 bg-white shadow-md text-center">Product List</h1>
+        <div className="container mx-auto p-2 mt-12 bg-amber-300">
+            
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-4">
                 {products.length > 0 ? (
                     products.map(product => (

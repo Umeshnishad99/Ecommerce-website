@@ -1,0 +1,4 @@
+CART FUNCTIONALITY (FRONTEND + BACKEND)
+1.Update Cart Quantity (+/-) for Django
+2. Django API Integration
+3. Frontend Implementation.

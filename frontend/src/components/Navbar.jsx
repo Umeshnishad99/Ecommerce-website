@@ -6,7 +6,7 @@ function Navbar() {
     const cartCount = cartItems.reduce((total, item) => total + item.quantity, 0);
 
     return (
-        <nav className="bg-white shadow-md px-6 py-4 flex justify-between items-center fixed w-full top-0 z-50">
+        <nav className="bg-amber-200 shadow-md px-6 py-4 flex justify-between items-center fixed w-full top-0 z-50">
             <Link to="/" className="text-2xl font-bold text-gray-800">E-Commerce</Link>
             <Link to="/cart" className="text-gray-800 hover:text-gray-600 relative">
                 Cart {cartCount > 0 && (

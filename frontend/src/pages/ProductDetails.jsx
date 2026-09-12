@@ -93,7 +93,7 @@ function ProductDetail() {
                         </p>
 
                         <button
-                            onClick={() => addToCart(product)}
+                            onClick={() => addToCart(product.id)}
                             className="w-full sm:w-auto bg-blue-500 text-white px-5 py-2.5 sm:py-3 rounded-lg hover:bg-blue-600 transition-colors duration-300 text-sm sm:text-base"
                         >
                             Add to Cart
