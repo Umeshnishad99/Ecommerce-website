@@ -1,0 +1,6 @@
+CHECKOUT AND ORDER PLACEMENT 
+
+1.Create checkout form (Address Phone, payment method dropdown)
+2. API endpoint to create .
+3. React frontend form -> POST to /api/orders/Create
+4. Show success message after placing order
