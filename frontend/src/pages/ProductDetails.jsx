@@ -62,6 +62,14 @@ function ProductDetail() {
         );
     }
 
+    const handleAddToCart =()=>{
+        if(!localStorage.getItem('access_token')){
+            window.location.href ='/login'
+            return;
+        }
+        addToCart(product.id);
+    }
+
     return (
         <div className="min-h-screen bg-gray-100 flex items-center justify-center px-3 py-6 sm:px-5 sm:py-10">
             <div className="bg-white p-4 sm:p-6 lg:p-8 rounded-lg shadow-md w-full max-w-4xl">
@@ -93,7 +101,7 @@ function ProductDetail() {
                         </p>
 
                         <button
-                            onClick={() => addToCart(product.id)}
+                            onClick={handleAddToCart}
                             className="w-full sm:w-auto bg-blue-500 text-white px-5 py-2.5 sm:py-3 rounded-lg hover:bg-blue-600 transition-colors duration-300 text-sm sm:text-base"
                         >
                             Add to Cart

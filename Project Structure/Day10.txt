@@ -1,0 +1,6 @@
+USER AUTHENTICATION (JWT LOGIN + SIGNUP)
+
+1. Django Rest simpleJWT setup
+2. /api/regsiter/ and /api/token endpoint
+3. React login/singup pages + store JWT in localStroage
+4. Protect cart & order routes for logged-in users
